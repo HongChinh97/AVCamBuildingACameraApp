@@ -11,6 +11,8 @@ import Photos
 class PhotoCaptureProcessor: NSObject {
     private(set) var requestedPhotoSettings: AVCapturePhotoSettings
     
+
+    
     private let willCapturePhotoAnimation: () -> Void
     
     private let livePhotoCaptureHandler: (Bool) -> Void

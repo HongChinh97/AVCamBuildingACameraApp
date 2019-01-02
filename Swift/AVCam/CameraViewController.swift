@@ -840,6 +840,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     // MARK: KVO and Notifications
     
     private var keyValueObservations = [NSKeyValueObservation]()
+    
     /// - Tag: ObserveInterruption
     private func addObservers() {
         let keyValueObservation = session.observe(\.isRunning, options: .new) { _, change in
